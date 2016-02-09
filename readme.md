@@ -13,8 +13,9 @@ HTML нужно писать в `src/index.html`, стили в `src/less/styles
 ```
 git clone https://github.com/amiskov/simple-project-template.git
 ```
-установите нужные пакеты:
+перейдите в папку проекта и установите нужные пакеты:
 ```
+cd path/to/simple-project-template
 npm install
 ```
 запустите сборщик:
