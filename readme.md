@@ -11,11 +11,11 @@ HTML нужно писать в `src/index.html`, стили в `src/less/styles
 
 Склонируйте этот репозиторий себе на компьютер:
 ```
-git clone https://github.com/amiskov/simple-project-template.git
+git clone https://github.com/amiskov/test-project-template.git
 ```
 перейдите в папку проекта и установите нужные пакеты:
 ```
-cd path/to/simple-project-template
+cd path/to/test-project-template
 npm install
 ```
 запустите сборщик:
