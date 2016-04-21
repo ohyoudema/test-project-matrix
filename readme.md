@@ -40,6 +40,5 @@ gulp
 
 ## Учебные материалы
 * [Основы работы с Гитом](http://try.github.io). Интерактивный учебник.
-* [Скринкаст по NodeJS](https://learn.javascript.ru/screencast/nodejs). Достаточно просмотреть первые 9 видюшек.
-* [Скринкаст по Gulp 4](https://learn.javascript.ru/screencast/gulp). В скринкасте используется Gulp 4, в этом репозитории пока Gulp 3.9.
 * [Методология БЭМ](https://ru.bem.info/method/).
+* [Учебник по работе с LESS](https://mrmlnc.gitbooks.io/less-guidebook-for-beginners/content/)
