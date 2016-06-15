@@ -39,6 +39,5 @@ gulp
 * CSS-селекторы нужно именовать по методологии [БЭМ](https://ru.bem.info/method/)
 
 ## Учебные материалы
-* [Основы работы с Гитом](http://try.github.io). Интерактивный учебник.
 * [Методология БЭМ](https://ru.bem.info/method/).
 * [Учебник по работе с LESS](https://mrmlnc.gitbooks.io/less-guidebook-for-beginners/content/)
