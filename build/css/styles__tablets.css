@@ -147,7 +147,7 @@ a:hover {
 *:after {
   box-sizing: border-box;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) {
   .nav__nav-phones,
   .nav__search-phones,
   .header__hamburger-phones,
@@ -156,30 +156,30 @@ a:hover {
   }
 }
 .container {
-  width: 1440px;
+  width: 768px;
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .header {
-  height: 57px;
+  height: 70px;
   background: #cd1d2c;
 }
 .header__nav {
-  padding-top: 12px;
+  margin-top: 17px;
   float: left;
 }
 .header__link,
 .header__text {
-  font: 9px Helvetica;
+  font: 10px Helvetica;
   color: white;
 }
 .header__link {
   text-transform: uppercase;
 }
 .header__logo {
-  padding-top: 18px;
-  margin-left: 452px;
+  margin-top: 23px;
+  margin-left: 94px;
   float: left;
 }
 .header__logo-text {
@@ -187,33 +187,33 @@ a:hover {
   color: white;
 }
 .header__search {
-  padding-top: 18px;
-  margin-left: 475px;
+  margin-top: 22px;
+  margin-left: 178px;
   float: left;
 }
 .header__search-link {
-  font: 18px "icomatrix";
+  font: 21px "icomatrix";
   color: white;
 }
 .nav {
-  height: 32px;
+  height: 43px;
   background: #262626;
 }
 .nav__menu {
-  padding-top: 8px;
+  padding-top: 13px;
 }
 .nav__link:first-child {
-  margin-left: 225px;
+  margin-left: -1px;
 }
 .nav__link {
   text-transform: uppercase;
   font: 12px Helvetica;
   color: #b9b9b9;
-  margin-left: 60px;
+  margin-left: 20px;
 }
 .nav__link_active {
   background: black;
-  padding: 10px 12px 8px 12px;
+  padding: 15px 19px 14px 19px;
 }
 .breadcrumbs__parent,
 .breadcrumbs__divider,
@@ -221,7 +221,7 @@ a:hover {
   float: left;
   text-transform: uppercase;
   font: 12px Helvetica;
-  margin-top: 13px;
+  margin-top: 40px;
 }
 .breadcrumbs__parent {
   margin-left: 27px;
@@ -237,37 +237,36 @@ a:hover {
   clear: both;
 }
 .videos__main {
-  width: 960px;
-  margin-left: 212px;
+  width: 669px;
+  margin-left: 27px;
 }
 .videos__head {
   color: #0c0c0c;
-  font: 75px Helvetica;
+  font: 61px Helvetica;
   font-weight: 900;
-  margin-top: 84px;
+  margin-top: 62px;
   text-transform: uppercase;
-  padding-left: 10px;
 }
 .videos__preview-img {
-  width: 960px;
-  height: 494px;
+  width: 669px;
+  height: 344px;
 }
 .videos__play-btn {
   position: relative;
   text-align: center;
-  bottom: 342px;
-  left: 418px;
+  bottom: 238px;
+  left: 262px;
   width: 180px;
 }
 .videos__play-btn-text {
-  font: 196px "icomatrix";
+  font: 134px "icomatrix";
   color: #cccccc;
 }
 .videos__description {
-  margin-top: -178px;
+  margin-top: -94px;
   border-bottom: 2px solid #3d3d3d;
-  padding-left: 10px;
-  padding-bottom: 38px;
+  padding-left: 6px;
+  padding-bottom: 27px;
 }
 .videos__main-text {
   color: #3d3d3d;
@@ -275,23 +274,37 @@ a:hover {
   font-weight: 900;
 }
 .videos__gallery {
-  margin-top: 80px;
-  margin-left: 215px;
-  margin-bottom: 46px;
-  width: 960px;
+  margin-top: 82px;
+  margin-left: 27px;
+  margin-bottom: 63px;
+  width: 669px;
 }
 .gallery__head {
   color: #000000;
-  font: 47px Helvetica;
+  font: 30px Helvetica;
   font-weight: 900;
   text-transform: uppercase;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
+}
+.gallery__head-1,
+.gallery__head-3 {
+  padding-left: 21px;
+}
+.gallery__head-2 {
+  padding-left: 12px;
 }
 .gallery__item:not(:nth-child(1)) {
-  margin-top: -24px;
+  margin-top: 3px;
 }
 .gallery__head-decoration {
   color: #bd3433;
+}
+.gallery__slider-1,
+.gallery__slider-3 {
+  margin-left: 18px;
+}
+.gallery__slider-2 {
+  margin-left: 9px;
 }
 .gallery__slide-img {
   width: 310px;
@@ -309,21 +322,21 @@ a:hover {
   color: #cccccc;
 }
 .footer {
-  height: 60px;
+  height: 58px;
   background: #2a2a2a;
 }
 .footer__info {
   padding-top: 10px;
-  margin-left: 10px;
+  margin-left: 2px;
   float: left;
 }
 .footer__link:nth-child(2),
 .footer__link:nth-child(3),
 .footer__link:nth-child(6) {
-  margin-left: 12px;
+  margin-left: 5px;
 }
 .footer__link:nth-child(5) {
-  padding-top: 8px;
+  padding-top: 6px;
 }
 .footer__link {
   display: inline-block;
@@ -333,8 +346,8 @@ a:hover {
 }
 .footer__social {
   float: left;
-  margin-left: 330px;
-  padding-top: 20px;
+  margin-left: 30px;
+  padding-top: 18px;
 }
 .footer__social-icon {
   font: 20px "icomatrix";
@@ -346,13 +359,14 @@ a:hover {
 .footer__options {
   float: right;
   padding-top: 12px;
-  margin-right: 38px;
+  margin-right: 8px;
 }
 .footer__options-text {
   color: #878787;
   font: 10px Helvetica;
+  text-align: right;
   text-transform: uppercase;
-  padding-bottom: 8px;
+  padding-bottom: 6px;
 }
 .footer__options-link {
   color: #f1f1f1;

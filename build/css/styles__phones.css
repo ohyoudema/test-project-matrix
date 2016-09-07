@@ -147,73 +147,71 @@ a:hover {
 *:after {
   box-sizing: border-box;
 }
-@media screen and (min-width: 1440px) {
-  .nav__nav-phones,
-  .nav__search-phones,
-  .header__hamburger-phones,
-  .videos__gallery-phones {
+@media screen and (max-width: 768px) {
+  .header__nav,
+  .header__search,
+  .nav__menu,
+  .videos__gallery,
+  .gallery-phones__preview_more {
     display: none;
   }
 }
 .container {
-  width: 1440px;
+  width: 320px;
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .header {
-  height: 57px;
+  height: 70px;
   background: #cd1d2c;
 }
-.header__nav {
-  padding-top: 12px;
+.header__hamburger-phones {
+  padding-top: 20px;
+  margin-left: 10px;
   float: left;
 }
-.header__link,
-.header__text {
-  font: 9px Helvetica;
+.header__hamburger-link {
+  font: 24px "icomatrix";
   color: white;
 }
-.header__link {
-  text-transform: uppercase;
-}
 .header__logo {
-  padding-top: 18px;
-  margin-left: 452px;
+  padding-top: 27px;
+  margin-left: 26px;
   float: left;
 }
 .header__logo-text {
-  font: 22px "icomatrix";
-  color: white;
-}
-.header__search {
-  padding-top: 18px;
-  margin-left: 475px;
-  float: left;
-}
-.header__search-link {
-  font: 18px "icomatrix";
+  font: 14px "icomatrix";
   color: white;
 }
 .nav {
-  height: 32px;
+  height: 50px;
   background: #262626;
 }
-.nav__menu {
-  padding-top: 8px;
+.nav__nav-phones {
+  margin-top: 5px;
+  margin-left: 10px;
+  float: left;
 }
-.nav__link:first-child {
-  margin-left: 225px;
+.nav__link-phones,
+.nav__text-phones {
+  font: 10px Helvetica;
+  color: white;
 }
-.nav__link {
+.nav__link-phones {
   text-transform: uppercase;
-  font: 12px Helvetica;
-  color: #b9b9b9;
-  margin-left: 60px;
 }
-.nav__link_active {
-  background: black;
-  padding: 10px 12px 8px 12px;
+.nav__text-phones {
+  padding-top: 4px;
+}
+.nav__search-phones {
+  padding-top: 13px;
+  margin-left: 165px;
+  float: left;
+}
+.nav__search-link-phones {
+  font: 23px "icomatrix";
+  color: white;
 }
 .breadcrumbs__parent,
 .breadcrumbs__divider,
@@ -221,12 +219,9 @@ a:hover {
   float: left;
   text-transform: uppercase;
   font: 12px Helvetica;
-  margin-top: 13px;
+  margin-top: 16px;
 }
-.breadcrumbs__parent {
-  margin-left: 27px;
-  color: #666666;
-}
+.breadcrumbs__parent,
 .breadcrumbs__divider {
   color: #666666;
 }
@@ -237,85 +232,124 @@ a:hover {
   clear: both;
 }
 .videos__main {
-  width: 960px;
-  margin-left: 212px;
+  width: 300px;
 }
 .videos__head {
   color: #0c0c0c;
-  font: 75px Helvetica;
+  font: 28px Helvetica;
   font-weight: 900;
-  margin-top: 84px;
+  margin: 54px 0 14px -2px;
   text-transform: uppercase;
-  padding-left: 10px;
 }
 .videos__preview-img {
-  width: 960px;
-  height: 494px;
+  width: 300px;
+  height: 152px;
 }
 .videos__play-btn {
   position: relative;
   text-align: center;
-  bottom: 342px;
-  left: 418px;
-  width: 180px;
+  bottom: 112px;
+  left: 112px;
+  width: 80px;
 }
 .videos__play-btn-text {
-  font: 196px "icomatrix";
+  font: 62px "icomatrix";
   color: #cccccc;
 }
 .videos__description {
-  margin-top: -178px;
+  margin-top: -54px;
   border-bottom: 2px solid #3d3d3d;
-  padding-left: 10px;
-  padding-bottom: 38px;
+  padding-left: 6px;
+  padding-bottom: 14px;
 }
 .videos__main-text {
   color: #3d3d3d;
+  font: 16px Helvetica;
+  font-weight: 900;
+}
+.videos__gallery-phones {
+  margin-top: 56px;
+  margin-bottom: 130px;
+  width: 300px;
+}
+.gallery-phones__head {
+  color: #000000;
   font: 28px Helvetica;
   font-weight: 900;
-}
-.videos__gallery {
-  margin-top: 80px;
-  margin-left: 215px;
-  margin-bottom: 46px;
-  width: 960px;
-}
-.gallery__head {
-  color: #000000;
-  font: 47px Helvetica;
-  font-weight: 900;
   text-transform: uppercase;
-  margin-bottom: 4px;
+  margin-left: 4px;
+  margin-bottom: 8px;
 }
-.gallery__item:not(:nth-child(1)) {
-  margin-top: -24px;
+.gallery-phones__item:not(:nth-child(1)) {
+  margin-top: 81px;
 }
-.gallery__head-decoration {
+.gallery-phones__head-decoration {
   color: #bd3433;
 }
-.gallery__slide-img {
-  width: 310px;
-  height: 175px;
+.gallery-phones__preview:not(:nth-child(2)) {
+  margin-top: -13px;
 }
-.gallery__play-btn {
+.gallery-phones__preview-img {
+  width: 300px;
+  height: 180px;
+}
+.gallery-phones__play-btn {
   position: relative;
   text-align: center;
-  bottom: 137px;
-  left: 98px;
+  bottom: 123px;
+  left: 93px;
   width: 100px;
 }
-.gallery__play-btn-text {
-  font: 86px "icomatrix";
+.gallery-phones__play-btn-text {
+  font: 58px "icomatrix";
   color: #cccccc;
 }
+.gallery-phones__button {
+  margin-top: -32px;
+}
+.gallery-phones__button-link {
+  background-color: #252525;
+  border: none;
+  color: white;
+  padding: 16px 39px 18px 37px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font: 10px Helvetica;
+  margin-left: 78px;
+}
 .footer {
-  height: 60px;
+  height: 324px;
   background: #2a2a2a;
 }
-.footer__info {
-  padding-top: 10px;
+.footer__social {
   margin-left: 10px;
-  float: left;
+  margin-top: -150px;
+}
+.footer__social-icon {
+  font: 20px "icomatrix";
+  color: #cccccc;
+}
+.footer__social-icon:not(:nth-child(1)) {
+  margin-left: 20px;
+}
+.footer__options {
+  margin-left: 17px;
+  margin-top: 31px;
+}
+.footer__options-text {
+  color: #878787;
+  font: 10px Helvetica;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+}
+.footer__options-link {
+  color: #f1f1f1;
+}
+.footer__info {
+  margin-left: 16px;
+  padding-top: 143px;
 }
 .footer__link:nth-child(2),
 .footer__link:nth-child(3),
@@ -330,30 +364,4 @@ a:hover {
   font: 10px Helvetica;
   color: #878787;
   text-transform: uppercase;
-}
-.footer__social {
-  float: left;
-  margin-left: 330px;
-  padding-top: 20px;
-}
-.footer__social-icon {
-  font: 20px "icomatrix";
-  color: #cccccc;
-}
-.footer__social-icon:not(:nth-child(1)) {
-  margin-left: 20px;
-}
-.footer__options {
-  float: right;
-  padding-top: 12px;
-  margin-right: 38px;
-}
-.footer__options-text {
-  color: #878787;
-  font: 10px Helvetica;
-  text-transform: uppercase;
-  padding-bottom: 8px;
-}
-.footer__options-link {
-  color: #f1f1f1;
 }
