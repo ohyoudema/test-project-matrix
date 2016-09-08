@@ -1,5 +1,139 @@
-// Your code goes here
-@import "reset-eric.less";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+a:active,
+a:focus,
+a:hover {
+  text-decoration: none;
+}
 @font-face {
   font-family: HelveticaNeueCyr;
   src: url("/HelveticaNeue_rus/helveticaneuecyr-medium.woff2");
@@ -8,20 +142,12 @@
   font-family: "icomatrix";
   src: url("/icomatrix/fonts/icomatrix.ttf");
 }
-// --------
-// Box-sizing
-// --------
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-// --------
-// Media queries
-// --------
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .nav__nav-phones,
   .nav__search-phones,
   .header__hamburger-phones,
@@ -29,27 +155,17 @@
     display: none;
   }
 }
-// --------
-// Container
-// --------
 .container {
   width: 768px;
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
-  // background: pink; //test
-
 }
-// --------
-// Header
-// --------
 .header {
   height: 70px;
   background: #cd1d2c;
-
 }
 .header__nav {
-  // background: pink; //test
   margin-top: 17px;
   float: left;
 }
@@ -62,7 +178,6 @@
   text-transform: uppercase;
 }
 .header__logo {
-  // background: pink; //test
   margin-top: 23px;
   margin-left: 94px;
   float: left;
@@ -72,7 +187,6 @@
   color: white;
 }
 .header__search {
-  // background: pink; //test
   margin-top: 22px;
   margin-left: 178px;
   float: left;
@@ -81,9 +195,6 @@
   font: 21px "icomatrix";
   color: white;
 }
-// --------
-// Navigation menu
-// --------
 .nav {
   height: 43px;
   background: #262626;
@@ -100,16 +211,10 @@
   color: #b9b9b9;
   margin-left: 20px;
 }
-// .nav__link:last-child {
-//   margin-left: 623px;
-// }
 .nav__link_active {
   background: black;
   padding: 15px 19px 14px 19px;
 }
-// --------
-// Breadcrumbs
-// --------
 .breadcrumbs__parent,
 .breadcrumbs__divider,
 .breadcrumbs__child {
@@ -128,34 +233,25 @@
 .breadcrumbs__child {
   color: #cd1d2c;
 }
-// --------
-// Videos
-// --------
 .videos {
   clear: both;
 }
 .videos__main {
   width: 669px;
   margin-left: 27px;
-  // background: green; //test
 }
 .videos__head {
-  // background: pink; //test
   color: #0c0c0c;
   font: 61px Helvetica;
   font-weight: 900;
   margin-top: 62px;
   text-transform: uppercase;
 }
-.videos__preview {
-  // background: pink; //test
-}
 .videos__preview-img {
   width: 669px;
   height: 344px;
 }
 .videos__play-btn {
-  // background: pink; //test
   position: relative;
   text-align: center;
   bottom: 238px;
@@ -178,7 +274,6 @@
   font-weight: 900;
 }
 .videos__gallery {
-  // background: blue; //test
   margin-top: 82px;
   margin-left: 27px;
   margin-bottom: 63px;
@@ -203,18 +298,7 @@
 }
 .gallery__head-decoration {
   color: #bd3433;
-
 }
-// .slider__custom-arrow {
-//   font: 20px "icomatrix";
-//   color: #000000;
-//   line-height: 1;
-//
-//   opacity: .75;
-//   left: -25px;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-// }
 .gallery__slider-1,
 .gallery__slider-3 {
   margin-left: 18px;
@@ -227,7 +311,6 @@
   height: 175px;
 }
 .gallery__play-btn {
-  // background: pink; //test
   position: relative;
   text-align: center;
   bottom: 137px;
@@ -238,22 +321,18 @@
   font: 86px "icomatrix";
   color: #cccccc;
 }
-// --------
-// Footer
-// --------
 .footer {
   height: 58px;
   background: #2a2a2a;
 }
 .footer__info {
-  // background: pink; //test
   padding-top: 10px;
   margin-left: 2px;
   float: left;
 }
 .footer__link:nth-child(2),
 .footer__link:nth-child(3),
-.footer__link:nth-child(6) { // why?
+.footer__link:nth-child(6) {
   margin-left: 5px;
 }
 .footer__link:nth-child(5) {

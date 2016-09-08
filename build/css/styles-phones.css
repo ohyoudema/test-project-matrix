@@ -1,5 +1,139 @@
-// Your code goes here
-@import "reset-eric.less";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+a:active,
+a:focus,
+a:hover {
+  text-decoration: none;
+}
 @font-face {
   font-family: HelveticaNeueCyr;
   src: url("/HelveticaNeue_rus/helveticaneuecyr-medium.woff2");
@@ -8,48 +142,31 @@
   font-family: "icomatrix";
   src: url("/icomatrix/fonts/icomatrix.ttf");
 }
-// --------
-// Box-sizing
-// --------
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-// --------
-// Media queries
-// --------
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .header__nav,
   .header__search,
   .nav__menu,
   .videos__gallery,
-  .gallery-phones__preview_more {     // <-- temporary hide
+  .gallery-phones__preview_more {
     display: none;
   }
 }
-// --------
-// Container
-// --------
 .container {
   width: 320px;
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
-  // background: pink; //test
 }
-// --------
-// Header
-// --------
 .header {
   height: 70px;
   background: #cd1d2c;
-
 }
 .header__hamburger-phones {
-  // background: pink; //test
   padding-top: 20px;
   margin-left: 10px;
   float: left;
@@ -59,7 +176,6 @@
   color: white;
 }
 .header__logo {
-  // background: pink; //test
   padding-top: 27px;
   margin-left: 26px;
   float: left;
@@ -68,15 +184,11 @@
   font: 14px "icomatrix";
   color: white;
 }
-// --------
-// Navigation menu
-// --------
 .nav {
   height: 50px;
   background: #262626;
 }
 .nav__nav-phones {
-  // background: pink; //test
   margin-top: 5px;
   margin-left: 10px;
   float: left;
@@ -93,7 +205,6 @@
   padding-top: 4px;
 }
 .nav__search-phones {
-  // background: pink; //test
   padding-top: 13px;
   margin-left: 165px;
   float: left;
@@ -102,9 +213,6 @@
   font: 23px "icomatrix";
   color: white;
 }
-// --------
-// Breadcrumbs
-// --------
 .breadcrumbs__parent,
 .breadcrumbs__divider,
 .breadcrumbs__child {
@@ -120,15 +228,11 @@
 .breadcrumbs__child {
   color: #cd1d2c;
 }
-// --------
-// Videos
-// --------
 .videos {
   clear: both;
 }
 .videos__main {
   width: 300px;
-  // background: #bada55; //test
 }
 .videos__head {
   color: #0c0c0c;
@@ -137,15 +241,11 @@
   margin: 54px 0 14px -2px;
   text-transform: uppercase;
 }
-.videos__preview {
-  // background: pink; //test
-}
 .videos__preview-img {
   width: 300px;
   height: 152px;
 }
 .videos__play-btn {
-  // background: pink; //test
   position: relative;
   text-align: center;
   bottom: 112px;
@@ -168,7 +268,6 @@
   font-weight: 900;
 }
 .videos__gallery-phones {
-  // background: pink; //test
   margin-top: 56px;
   margin-bottom: 130px;
   width: 300px;
@@ -187,7 +286,7 @@
 .gallery-phones__head-decoration {
   color: #bd3433;
 }
-.gallery-phones__preview:not(:nth-child(2)) { // why?
+.gallery-phones__preview:not(:nth-child(2)) {
   margin-top: -13px;
 }
 .gallery-phones__preview-img {
@@ -195,7 +294,6 @@
   height: 180px;
 }
 .gallery-phones__play-btn {
-  // background: pink; //test
   position: relative;
   text-align: center;
   bottom: 123px;
@@ -208,23 +306,19 @@
 }
 .gallery-phones__button {
   margin-top: -32px;
-  // background: #bada55; //test
 }
 .gallery-phones__button-link {
-    background-color: #252525;
-    border: none;
-    color: white;
-    padding: 16px 39px 18px 37px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: inline-block;
-    font: 10px Helvetica;
-    margin-left: 78px;
+  background-color: #252525;
+  border: none;
+  color: white;
+  padding: 16px 39px 18px 37px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font: 10px Helvetica;
+  margin-left: 78px;
 }
-// --------
-// Footer
-// --------
 .footer {
   height: 324px;
   background: #2a2a2a;
@@ -254,13 +348,12 @@
   color: #f1f1f1;
 }
 .footer__info {
-  // background: pink; //test
   margin-left: 16px;
   padding-top: 143px;
 }
 .footer__link:nth-child(2),
 .footer__link:nth-child(3),
-.footer__link:nth-child(6) { // why?
+.footer__link:nth-child(6) {
   margin-left: 12px;
 }
 .footer__link:nth-child(5) {
