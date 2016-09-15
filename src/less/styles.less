@@ -50,7 +50,7 @@
 // Container
 // --------
 .container {
-  // background: pink; //test
+  background: pink; //test
   margin: 0 auto;
   @media @desktop {
     width: 1440px;
@@ -87,8 +87,17 @@
     float: left;
   }
   &__hamburger-link {
-    font: 24px "icomatrix";
+    // font: 24px "icomatrix";
     color: white;
+  }
+  &__hamburger-link:before {
+    font-size: 26px;
+    font-family: icomatrix;
+    content: "\f0c9";
+    display: inline-block;
+    padding-right: 21px;
+    vertical-align: middle;
+    width: 12px;
   }
   &__nav {
     //background: pink; //test
@@ -123,28 +132,44 @@
       margin-left: 26px;
     }
   }
-  &__logo-text {
-    font: 22px "icomatrix";
+  &__logo-icon {
     color: white;
+  }
+  &__logo-icon:before {
+    font-size: 22px;
+    font-family: icomatrix;
+    content: "\e900";
+    display: inline-block;
+    padding-right: 21px;
+    vertical-align: middle;
+    width: 12px;
     @media @phone {
-      font: 14px "icomatrix";
+      font-size: 14px;
     }
   }
   &__search {
     // background: pink; //test
     margin-top: 18px;
-    margin-left: 475px;
+    margin-left: 802px;
     float: left;
     @media @tablet {
       margin-top: 22px;
-      margin-left: 178px;
+      margin-left: 500px;
     }
   }
   &__search-link {
-    font: 18px "icomatrix";
     color: white;
+  }
+  &__search-link:before {
+    font-size: 18px;
+    font-family: icomatrix;
+    content: "\e901";
+    display: inline-block;
+    padding-right: 21px;
+    vertical-align: middle;
+    width: 12px;
     @media @tablet {
-      font: 21px "icomatrix";
+      font-size: 21px;
     }
   }
 }
@@ -209,8 +234,16 @@
     float: left;
   }
   &__search-link-phones {
-    font: 23px "icomatrix";
     color: white;
+  }
+  &__search-link-phones:before {
+    font-size: 23px;
+    font-family: icomatrix;
+    content: "\e901";
+    display: inline-block;
+    padding-right: 21px;
+    vertical-align: middle;
+    width: 12px;
   }
 }
 // --------

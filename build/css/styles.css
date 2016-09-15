@@ -165,6 +165,7 @@ a:hover {
   }
 }
 .container {
+  background: pink;
   margin: 0 auto;
 }
 @media only screen and (min-width: 1440px) {
@@ -208,8 +209,16 @@ a:hover {
   float: left;
 }
 .header__hamburger-link {
-  font: 24px "icomatrix";
   color: white;
+}
+.header__hamburger-link:before {
+  font-size: 26px;
+  font-family: icomatrix;
+  content: "\f0c9";
+  display: inline-block;
+  padding-right: 21px;
+  vertical-align: middle;
+  width: 12px;
 }
 .header__nav {
   margin-top: 12px;
@@ -251,33 +260,49 @@ a:hover {
     margin-left: 26px;
   }
 }
-.header__logo-text {
-  font: 22px "icomatrix";
+.header__logo-icon {
   color: white;
 }
+.header__logo-icon:before {
+  font-size: 22px;
+  font-family: icomatrix;
+  content: "\e900";
+  display: inline-block;
+  padding-right: 21px;
+  vertical-align: middle;
+  width: 12px;
+}
 @media only screen and (max-width: 767px) {
-  .header__logo-text {
-    font: 14px "icomatrix";
+  .header__logo-icon:before {
+    font-size: 14px;
   }
 }
 .header__search {
   margin-top: 18px;
-  margin-left: 475px;
+  margin-left: 802px;
   float: left;
 }
 @media only screen and (max-width: 1439px) and (min-width: 768px) {
   .header__search {
     margin-top: 22px;
-    margin-left: 178px;
+    margin-left: 500px;
   }
 }
 .header__search-link {
-  font: 18px "icomatrix";
   color: white;
 }
+.header__search-link:before {
+  font-size: 18px;
+  font-family: icomatrix;
+  content: "\e901";
+  display: inline-block;
+  padding-right: 21px;
+  vertical-align: middle;
+  width: 12px;
+}
 @media only screen and (max-width: 1439px) and (min-width: 768px) {
-  .header__search-link {
-    font: 21px "icomatrix";
+  .header__search-link:before {
+    font-size: 21px;
   }
 }
 .nav {
@@ -349,8 +374,16 @@ a:hover {
   float: left;
 }
 .nav__search-link-phones {
-  font: 23px "icomatrix";
   color: white;
+}
+.nav__search-link-phones:before {
+  font-size: 23px;
+  font-family: icomatrix;
+  content: "\e901";
+  display: inline-block;
+  padding-right: 21px;
+  vertical-align: middle;
+  width: 12px;
 }
 .breadcrumbs {
   text-transform: uppercase;
