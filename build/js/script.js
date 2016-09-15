@@ -12,8 +12,8 @@
           }
         }
       ]
-    // nextArrow: '<i class="slider__custom-arrow_next">&#xf054;</i>',
-    // prevArrow: '<i class="slider__custom-arrow_prev">&#xf053;</i>',
+      // nextArrow: '.gallery__controllers-next',
+      // prevArrow: '.gallery__controllers-prev',
     });
     $('.fancybox-media').fancybox({
       openEffect  : 'none',

@@ -633,6 +633,31 @@ a:hover {
   vertical-align: middle;
   color: #cccccc;
 }
+.gallery__controllers {
+  position: absolute;
+  margin-top: -190px;
+}
+.gallery__controllers-next,
+.gallery__controllers-prev {
+  font-size: 30px;
+  font-family: icomatrix;
+  display: inline-block;
+  vertical-align: middle;
+  color: #000;
+  cursor: pointer;
+}
+.gallery__controllers-next {
+  margin-left: 1025px;
+}
+.gallery__controllers-prev {
+  margin-left: -60px;
+}
+.gallery__controllers-next:before {
+  content: "\f054";
+}
+.gallery__controllers-prev:before {
+  content: "\f053";
+}
 .gallery-phones__head {
   color: #000000;
   font: 28px Helvetica;

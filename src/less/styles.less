@@ -474,6 +474,32 @@
     vertical-align: middle;
     color: #cccccc;
   }
+  &__controllers {
+    position: absolute;
+    margin-top: -190px;
+  }
+  &__controllers-next,
+  &__controllers-prev {
+    font-size: 30px;
+    font-family: icomatrix;
+    display: inline-block;
+    vertical-align: middle;
+    color: #000;
+    cursor: pointer;
+    // background: yellow; //test
+  }
+  &__controllers-next {
+    margin-left: 1025px;
+  }
+  &__controllers-prev {
+    margin-left: -60px;
+  }
+  &__controllers-next:before {
+    content: "\f054";
+  }
+  &__controllers-prev:before {
+    content: "\f053";
+  }
 }
 .gallery-phones {
   &__head {
