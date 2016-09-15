@@ -165,7 +165,6 @@ a:hover {
   }
 }
 .container {
-  background: pink;
   margin: 0 auto;
 }
 @media only screen and (min-width: 1440px) {
@@ -500,18 +499,22 @@ a:hover {
     width: 80px;
   }
 }
-.videos__play-btn-text {
-  font: 196px "icomatrix";
+.videos__play-btn:before {
+  font-size: 196px;
+  font-family: icomatrix;
+  content: "\f144";
+  display: inline-block;
+  vertical-align: middle;
   color: #cccccc;
 }
 @media only screen and (max-width: 1439px) and (min-width: 768px) {
-  .videos__play-btn-text {
-    font: 134px "icomatrix";
+  .videos__play-btn:before {
+    font-size: 134px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .videos__play-btn-text {
-    font: 62px "icomatrix";
+  .videos__play-btn:before {
+    font-size: 62px;
   }
 }
 .videos__description {
@@ -622,8 +625,12 @@ a:hover {
   left: 98px;
   width: 100px;
 }
-.gallery__play-btn-text {
-  font: 86px "icomatrix";
+.gallery__play-btn:before {
+  font-size: 86px;
+  font-family: icomatrix;
+  content: "\f144";
+  display: inline-block;
+  vertical-align: middle;
   color: #cccccc;
 }
 .gallery-phones__head {
@@ -654,8 +661,12 @@ a:hover {
   left: 93px;
   width: 100px;
 }
-.gallery-phones__play-btn-text {
-  font: 58px "icomatrix";
+.gallery-phones__play-btn:before {
+  font-size: 58px;
+  font-family: icomatrix;
+  content: "\f144";
+  display: inline-block;
+  vertical-align: middle;
   color: #cccccc;
 }
 .gallery-phones__button {

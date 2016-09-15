@@ -50,7 +50,7 @@
 // Container
 // --------
 .container {
-  background: pink; //test
+  // background: pink; //test
   margin: 0 auto;
   @media @desktop {
     width: 1440px;
@@ -350,14 +350,18 @@
       width: 80px;
     }
   }
-  &__play-btn-text {
-    font: 196px "icomatrix";
+  &__play-btn:before {
+    font-size: 196px;
+    font-family: icomatrix;
+    content: "\f144";
+    display: inline-block;
+    vertical-align: middle;
     color: #cccccc;
     @media @tablet {
-      font: 134px "icomatrix";
+      font-size: 134px;
     }
     @media @phone {
-      font: 62px "icomatrix";
+      font-size: 62px;
     }
   }
   &__description {
@@ -462,8 +466,12 @@
     left: 98px;
     width: 100px;
   }
-  &__play-btn-text {
-    font: 86px "icomatrix";
+  &__play-btn:before {
+    font-size: 86px;
+    font-family: icomatrix;
+    content: "\f144";
+    display: inline-block;
+    vertical-align: middle;
     color: #cccccc;
   }
 }
@@ -497,8 +505,12 @@
     left: 93px;
     width: 100px;
   }
-  &__play-btn-text {
-    font: 58px "icomatrix";
+  &__play-btn:before {
+    font-size: 58px;
+    font-family: icomatrix;
+    content: "\f144";
+    display: inline-block;
+    vertical-align: middle;
     color: #cccccc;
   }
   &__button {
