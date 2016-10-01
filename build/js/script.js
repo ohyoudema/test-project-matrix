@@ -24,3 +24,6 @@
     });
   });
 })(document, window, jQuery);
+// var tmpl = _.template(document.getElementById('list-template').innerHTML);
+// var result = tmpl({count: 5});
+// document.write( result );
